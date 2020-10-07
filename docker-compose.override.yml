@@ -1,0 +1,19 @@
+
+
+--- 
+version: '3.4' 
+services:   
+nginx:     
+ports:            
+- "8080:8080"  
+netbox:    
+hostname: netbox-docker.f5.kdm.wcss.pl   
+build:      
+context: .       dockerfile: Dockerfile-WCSS     
+image:
+netbox:latest-wcss    
+environment:  
+DEBUG: "True"  
+netbox-worker:     
+image: netbox:latest-wcss
+
