@@ -62,3 +62,13 @@ sudo systemctl restart apache2
 
 Username: Admin
 Password: zabbix
+
+
+# Uninstall zabbix-server-mysql
+
+sudo apt-get remove zabbix-server-mysql
+sudo apt-get autoremove zabbix-server-mysql
+sudo apt-get purge zabbix-server-mysql
+sudo apt-get autoremove --purge zabbix-server-mysql
+
+
